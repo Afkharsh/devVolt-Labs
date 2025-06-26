@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #121212;
+  color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.intro {
+  padding: 2rem;
+  text-align: center;
+}
+
+.chatbot {
+  padding: 2rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+footer {
+  background: #121212;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
