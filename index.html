@@ -1,31 +1,40 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DevVolt Labs</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevVolt Labs</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <header>
     <h1>Welcome to DevVolt Labs</h1>
     <p>Your gateway to DIY electronics kits and learning.</p>
+  </header>
 
-    <!-- Chatbot toggle button -->
-    <button class="chatbot-btn" onclick="toggleChatbot()">Chat with us</button>
+  <main>
+    <h2>Explore Our Kits</h2>
+    <p>Coming soon: Robotics kits, electronics components, and beginner-friendly learning modules!</p>
+  </main>
 
-    <!-- Chatbot popup -->
-    <div id="chatbot-container" class="chatbot-container">
-        <div class="chatbot-header">
-            <span>DevVolt Bot</span>
-            <button onclick="toggleChatbot()">X</button>
-        </div>
-        <div class="chatbot-body" id="chatbot-body">
-            <div class="bot-msg">Hi! I'm DevVolt Bot. Ask me anything.</div>
-        </div>
-        <input type="text" id="user-input" placeholder="Type your question..." onkeypress="handleKeyPress(event)" />
-    </div>
+  <!-- Chatbot Button -->
+  <button class="chatbot-button" onclick="toggleBot()">💬 Chat with us</button>
 
-    <script src="chatbot.js"></script>
+  <!-- Chatbot Iframe -->
+  <iframe id="chatbot" class="chatbot-iframe" src="https://app.fastbots.ai/embed/cmcca7rqh00tprilynrxlkqvb"></iframe>
+
+  <script>
+    const iframe = document.getElementById("chatbot");
+    let visible = false;
+
+    function toggleBot() {
+      visible = !visible;
+      iframe.style.display = visible ? "block" : "none";
+    }
+  </script>
 </body>
+
 </html>
