@@ -1,27 +1,31 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DevVolt Labs</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="https://app.fastbots.ai/embed.js" data-bot-id="cmcca7rqh00tprilynrxlkqvb"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevVolt Labs</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>⚡ DevVolt Labs</h1>
-    <p>Build. Learn. Innovate.</p>
-  </header>
+    <h1>Welcome to DevVolt Labs</h1>
+    <p>Your gateway to DIY electronics kits and learning.</p>
 
-  <section class="intro">
-    <h2>DIY Electronics Kits & Projects</h2>
-    <p>From Delhi to your desk — start your innovation journey today.</p>
-  </section>
+    <!-- Chatbot toggle button -->
+    <button class="chatbot-btn" onclick="toggleChatbot()">Chat with us</button>
 
-  <!-- Chatbot Section -->
+    <!-- Chatbot popup -->
+    <div id="chatbot-container" class="chatbot-container">
+        <div class="chatbot-header">
+            <span>DevVolt Bot</span>
+            <button onclick="toggleChatbot()">X</button>
+        </div>
+        <div class="chatbot-body" id="chatbot-body">
+            <div class="bot-msg">Hi! I'm DevVolt Bot. Ask me anything.</div>
+        </div>
+        <input type="text" id="user-input" placeholder="Type your question..." onkeypress="handleKeyPress(event)" />
+    </div>
 
-  <footer>
-    <p>&copy; 2025 DevVolt Labs. All rights reserved.</p>
-  </footer>
+    <script src="chatbot.js"></script>
 </body>
 </html>
