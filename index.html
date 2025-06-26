@@ -1,40 +1,54 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DevVolt Labs</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevVolt Labs</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-  <header>
-    <h1>Welcome to DevVolt Labs</h1>
-    <p>Your gateway to DIY electronics kits and learning.</p>
-  </header>
+    <header>
+        <div class="container">
+            <h1>DevVolt Labs ⚡</h1>
+            <p>Your Gateway to DIY Electronics</p>
+        </div>
+    </header>
 
-  <main>
-    <h2>Explore Our Kits</h2>
-    <p>Coming soon: Robotics kits, electronics components, and beginner-friendly learning modules!</p>
-  </main>
+    <section class="intro">
+        <div class="container">
+            <h2>🚀 Build. Learn. Innovate.</h2>
+            <p>Explore the world of electronics with our beginner-friendly DIY kits.</p>
+        </div>
+    </section>
 
-  <!-- Chatbot Button -->
-  <button class="chatbot-button" onclick="toggleBot()">💬 Chat with us</button>
+    <section class="kits">
+        <div class="container">
+            <h2>Starter Kits</h2>
+            <div class="kit-list">
+                <div class="kit">
+                    <img src="kit1.png" alt="Basic Kit">
+                    <h3>Beginner Kit</h3>
+                    <p>Perfect for getting started with LEDs, resistors, and breadboards.</p>
+                </div>
+                <div class="kit">
+                    <img src="kit2.png" alt="Intermediate Kit">
+                    <h3>Intermediate Kit</h3>
+                    <p>Includes motors, sensors, and basic microcontrollers.</p>
+                </div>
+                <div class="kit">
+                    <img src="kit3.png" alt="Advanced Kit">
+                    <h3>Advanced Kit</h3>
+                    <p>Best for advanced prototyping and innovation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Chatbot Iframe -->
-  <iframe id="chatbot" class="chatbot-iframe" src="https://app.fastbots.ai/embed/cmcca7rqh00tprilynrxlkqvb"></iframe>
-
-  <script>
-    const iframe = document.getElementById("chatbot");
-    let visible = false;
-
-    function toggleBot() {
-      visible = !visible;
-      iframe.style.display = visible ? "block" : "none";
-    }
-  </script>
+    <footer>
+        <div class="container">
+            <p>📍 Based in Delhi | 📦 Shipping Pan-India | 💬 Instagram: @devvoltlabs</p>
+        </div>
+    </footer>
 </body>
-
 </html>
